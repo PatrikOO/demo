@@ -1,49 +1,37 @@
 {
-  "Post": {
-    "_": {
-      "items": 20
-    },
-    "cover": {
+  "users/login": {
+    "redirectURL": {
       "regexp": "https://picsum\\.photos/seed/[0-9]{5}/1920/270"
     },
-    "title": {
-      "loremWords": {
-        "minLength": 5,
+    "cartId": {
+      "loremParagraphs": {
+        "minLength": 10,
         "maxLength": 20
       }
     },
-    "body": {
+    "PrVOID": {
       "loremParagraphs": {
-        "minLength": 10,
-        "maxLength": 100
+        "minLength": 5,
+        "maxLength": 10
       }
     },
-    "category": {
-      "string": ["one", "two", "three"]
-    },
-    "isDraft": {
+    "preorder": {
       "boolean": {}
     },
-    "views": {
-      "int": {
-        "min": 0,
-        "max": 1000
-      }
-    },
-    "createdAt": {
+    "orderPeriodFrom": {
       "dateTime": {
-        "min": "2010-01-01T00:00:00Z",
-        "max": "2020-12-31T23:59:59Z"
+        "min": "2023-01-01T00:00:00Z",
+        "max": "2023-12-31T23:59:59Z"
       }
     },
-    "comments": {
-      "hasMany": "Comment"
+    "orderPeriodTo": {
+      "dateTime": {
+        "min": "2024-01-01T00:00:00Z",
+        "max": "2024-12-31T23:59:59Z"
+      }
     }
   },
-  "Comment": {
-    "_": {
-      "items": 25
-    },
+  "getUserDetails": {
     "email": {
       "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"
     },
