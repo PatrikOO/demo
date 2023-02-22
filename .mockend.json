@@ -1,5 +1,5 @@
 {
-  "userslogin": {
+  "Post": {
     "redirectURL": {
       "regexp": "https://picsum\\.photos/seed/[0-9]{5}/1920/270"
     },
@@ -29,47 +29,6 @@
         "min": "2024-01-01T00:00:00Z",
         "max": "2024-12-31T23:59:59Z"
       }
-    }
-  },
-  "getUserDetails": {
-    "OID": {
-      "regexp": "[0-9]{1,1}.[0-9]{1,1}.[0-9]{4,4}"
-    },
-    "personalNumber": {
-      "loremParagraphs": {
-        "minLength": 10,
-        "maxLength": 20
-      }
-    },
-    "firstName": {
-      "string": "Pista"
-    },
-    "lastName": {
-      "string": "Hufnagel"
-    },
-    "displayName": {
-      "string": "RnDr. Pista Hufnagel Csc"
-    },
-    "rank": {
-      "string": "viceadmiral"
-    },
-    "assignedWarehouse": {
-      "regexp": "[0-9]{1,1}.[0-9]{1,1}.[0-9]{4,4}"
-    },
-    "email": {
-      "string": "pista.hufnagel@army.sk"
-    },
-    "phoneNumber": {
-      "string": "421900000000"
-    },
-    "username": {
-      "string": "viceadmiralPista"
-    },
-    "measurementsAllowed": {
-      "boolean": {}
-    },
-    "unit": {
-      "string": "1023"
     }
   }
 }
