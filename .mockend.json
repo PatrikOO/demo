@@ -32,23 +32,44 @@
     }
   },
   "getUserDetails": {
-    "email": {
-      "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"
+    "OID": {
+      "regexp": "[0-9]{1,1}.[0-9]{1,1}.[0-9]{4,4}"
     },
-    "body": {
+    "personalNumber": {
       "loremParagraphs": {
         "minLength": 10,
-        "maxLength": 100
+        "maxLength": 20
       }
     },
-    "createdAt": {
-      "dateTime": {
-        "min": "2010-01-01T00:00:00Z",
-        "max": "2020-12-31T23:59:59Z"
-      }
+    "firstName": {
+      "string": "Pista"
     },
-    "post": {
-      "belongsTo": "Post"
+    "lastName": {
+      "string": "Hufnagel"
+    },
+    "displayName": {
+      "string": "RnDr. Pista Hufnagel Csc"
+    },
+    "rank": {
+      "string": "viceadmiral"
+    },
+    "assignedWarehouse": {
+      "regexp": "[0-9]{1,1}.[0-9]{1,1}.[0-9]{4,4}"
+    },
+    "email": {
+      "string": "pista.hufnagel@army.sk"
+    },
+    "phoneNumber": {
+      "string": "421900000000"
+    },
+    "username": {
+      "string": "viceadmiralPista"
+    },
+    "measurementsAllowed": {
+      "boolean": {}
+    },
+    "unit": {
+      "string": "1023"
     }
   }
 }
